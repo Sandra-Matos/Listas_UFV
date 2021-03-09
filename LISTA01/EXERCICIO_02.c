@@ -13,7 +13,6 @@ soma = n2+n3;
 if(n1>soma){
      printf("O primeiro valor e maior que a soma dos outros dois.");
 }else
-    printf("O primeiro valor nao e amior que a soma dos outros dois.");
 
     
 return 0;
