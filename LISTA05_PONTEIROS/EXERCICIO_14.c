@@ -11,3 +11,21 @@
 //se sabe que as posições de um vetor são contínuas, pela diferença dos
 //endereços entre dois elementos consecutivos pode-se calcular quantos bytes
 //foram alocados para cada um elemento.
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    short int v[5] = {2, 5, 1, 4, 0};
+    int v1[5] = {2, 5, 1, 4, 0};
+    char c[5] = {'a', 'b', 'm', '4', '-'};
+    float f[5] = {2.66, 0.125, 1.0, 4.99, 2.009};
+    double d[5] = {2.66, 0.125, 1.0, 4.99, 2.009};
+
+    //int a;[][][][];
+    //short int a[][];
+    //long int a;[][][][][][][][];
+
+    printf("Quantidade de bytes para cada elemento do vetor 'v'%d\n:", (int)(&v[1] - &v[0]));
+    printf("Quantidade de bytes para cada elemento do vetor 'v': %d\n", (int)(&v[1])) - ((int)(&v[0]));
+    return 0;
+}
